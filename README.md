@@ -1,8 +1,6 @@
 ## decode-salesforce-signedrequest
 #### A Node.js npm module to decode Salesforce signed-request from Salesforce Canvas
 
-[![Build Status](https://travis-ci.org/rajaraodv/salesforce-signed-request.png?branch=master)](https://travis-ci.org/rajaraodv/salesforce-signed-request)
-
 ### Usage
 This library exports a `signedRequest` object when used as a global, or defines a `signedRequest` module when used along with an AMD compatible loader.
 
@@ -38,10 +36,9 @@ This library exports a `signedRequest` object when used as a global, or defines 
 ```
 
 ### Test
-1. Install Mocha, expect, chai & should by running `npm install`
-2. You may want to install Mocha globally by running `npm install -g mocha`
-2. Simply run `mocha` in the command line.
-
+0. Install dependencies `bower install`
+1. Open the file on `test/index.html`.
+2. See your test run (and pass!)
 
 ### License
 MIT
