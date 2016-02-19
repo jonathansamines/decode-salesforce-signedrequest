@@ -1,5 +1,5 @@
 ## decode-salesforce-signedrequest
-#### A Node.js npm module to decode Salesforce signed-request from Salesforce Canvas
+#### A browser module to decode Salesforce signed-request from Salesforce Canvas
 
 ### Usage
 This library exports a `signedRequest` object when used as a global, or defines a `signedRequest` module when used along with an AMD compatible loader.
