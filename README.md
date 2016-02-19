@@ -10,7 +10,7 @@ This library exports a `signedRequest` object when used as a global, or defines 
   bower install --save decode-salesforce-signedrequest
 ```
 
-#### By with browserify
+#### Usage with browserify
 
 ```javascript
  var signedRequest = require('decode-salesforce-signedrequest');
