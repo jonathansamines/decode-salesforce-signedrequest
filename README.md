@@ -1,29 +1,45 @@
-## Salesforce-signed-request
-####A Node.js npm module to decode Salesforce signed-request from Salesforce Canvas
+## decode-salesforce-signedrequest
+#### A Node.js npm module to decode Salesforce signed-request from Salesforce Canvas
 
 [![Build Status](https://travis-ci.org/rajaraodv/salesforce-signed-request.png?branch=master)](https://travis-ci.org/rajaraodv/salesforce-signed-request)
 
-<p align="center">
-![image](https://raw.github.com/rajaraodv/salesforce-signed-request/master/signed-request.jpg)
-
-
-
 ### Usage
-This library exports a single function to `decode` the signed request.
+This library exports a `signedRequest` object when used as a global, or defines a `signedRequest` module when used along with an AMD compatible loader.
 
-```javascript
- 
- var decode = require('salesforce-signed-request');
- 
- //json will have Salesforce context
- var json = decode('YOUR_SIGNED_REQUEST', 'API_SECRET');
- 
+### Installation
+
+```bash
+  bower install --save decode-salesforce-signedrequest
 ```
 
+#### By with browserify
+
+```javascript
+ var signedRequest = require('decode-salesforce-signedrequest');
+
+ // json will have Salesforce context
+ var json = signedRequest.decode('YOUR_SIGNED_REQUEST');
+```
+
+#### Usage with AMD
+
+```javascript
+  require('signedRequest', function(signedRequest) {
+    // json will have Salesforce context
+    var json = signedRequest.decode('YOUR_SIGNED_REQUEST');
+  });
+```
+
+#### Usage as a global
+
+```javascript
+   // json will have Salesforce context
+   var json = signedRequest.decode('YOUR_SIGNED_REQUEST');
+```
 
 ### Test
 1. Install Mocha, expect, chai & should by running `npm install`
-2. You may want to install Mocha globally by running `npm install -g mocha` 
+2. You may want to install Mocha globally by running `npm install -g mocha`
 2. Simply run `mocha` in the command line.
 
 

@@ -1,0 +1,32 @@
+{
+  "name": "decode-salesforce-signedrequest",
+  "main": "index.js",
+  "version": "1.0.0",
+  "homepage": "https://github.com/jonathansamines/decode-salesforce-signedrequest",
+  "authors": [
+    "Jonathan Samines <jn.samines@gmail.com>"
+  ],
+  "description": "A simple browser module to decode a salesforce valid signedrequest",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "salesforce",
+    "signedrequest"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "mocha": "^2.4.5",
+    "chai": "^3.5.0",
+    "jquery": "^2.2.0"
+  }
+}
